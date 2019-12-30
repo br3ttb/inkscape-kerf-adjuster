@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Adjust for Lasercutter Kerf</_name>
+  <id>kerfAdjust</id>
+  <dependency type="executable" location="extensions">kerf_adjuster.py</dependency>
+  <dependency type="executable" location="extensions">inkex.py</dependency>
+  <param min="0.0" name="kerfmm" type="float" _gui-text="kerf (mm)">0.2</param>
+  <effect needs-document="true" needs-live-preview="false">
+    <object-type>all</object-type>
+    <effects-menu>
+       <submenu _name="Generate from Path"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command reldir="extensions" interpreter="python">kerf_adjuster.py</command>
+  </script>
+</inkscape-extension>
