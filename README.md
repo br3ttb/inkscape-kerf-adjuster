@@ -1,6 +1,7 @@
 # inkscape-kerf-adjuster
 <img src="gear.png"/>
 creates a kerf-adjusted copy of selected path(s), so that a laser-cut part can be the exact size that was intended
+
 **NOTE: this is a heavy, HEAVY beta.  I'm happy with how it does the path operations, but I haven't been able to get it to consistently respect the kerf setting through transforms,  viewbox scaling, etc**
 
 
